@@ -1,0 +1,53 @@
+.box-instagram{
+	background: #333;
+	//@include clearfix;
+	header{
+		background: $red-lbvp;
+		h2{
+			font-family: $font-primary;
+			color: #ffffff;
+			font-size: 15px;
+			font-size: 1.5rem;
+			font-weight: bold;
+    		padding: 0.5em;
+		}
+	}
+	ul{
+		padding: 15px 0 0 0;
+		padding: 1.5rem 0 0 0;
+		@include clearfix;
+		li{
+			@include float-left;
+			@include span(1 of 3);
+			@include breakpoint($small){
+				@include transition();
+				@include span(3 of 3);
+			}
+			margin-bottom: gutter();
+			a{
+				img{
+					border: none;
+					width: 100%
+				}
+			}
+			&:nth-child(3){
+				margin-right: 0;
+			}
+			&:nth-child(6){
+				margin-right: 0;
+			}
+		}
+	}
+	div{
+		padding: 0 10px 10px 10px;
+		padding: 0 1rem 1rem 1rem;
+		color: #fff;
+		font-size: 1.5rem;
+		span{
+
+		}
+		a{
+			color: #fff;
+		}
+	}
+}

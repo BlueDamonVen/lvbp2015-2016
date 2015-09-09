@@ -1,0 +1,52 @@
+.font_style{
+	font-family: $font-primary;
+	font-size: 14px;
+	font-size: 1.4rem;
+	.the_last{
+		background: #000;
+		text-align:center;
+		color:#ffffff;
+		@include float-left;
+		height:40px;
+		padding-top: 10px;
+		padding-top: 1rem;
+		width: 150px;
+		.lo_ultimo {
+			position: relative;
+  			right: 15px;
+  			font-weight: bold;
+				i{
+					margin-right: 10px;
+					font-size: 1.9rem;
+					font-size: 19px;
+				}
+		}
+	}
+}
+.marquesina{
+	overflow: hidden;
+	.space_notice{
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		u{
+			a{
+				.text_color{
+					text-decoration: none;
+					color: #666666;
+				}
+			}
+		}
+	}
+}
+@include breakpoint($small){
+	.font_style .the_last{
+		width: 100%;
+		float: none;
+	}
+	.font_style .the_last .lo_ultimo{
+		float: left;
+  		padding-left: 25px;
+	}
+}

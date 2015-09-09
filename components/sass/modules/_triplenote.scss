@@ -1,0 +1,87 @@
+@import "susy";
+@import "breakpoint";
+@import "../mixins";
+@import "../variables";
+
+.triplenote:last-child .social{
+	border-bottom:0;
+}
+.trionote{
+	background: $white;
+	.triplenote{
+		@include container;
+	 	background:$gray-2;	
+		font-family: $font-primary;
+		padding: 1em;
+		margin-bottom: 1.2em;
+		@include breakpoint($small){
+			margin-bottom: 1.20482%;
+		}
+		.media{
+			@include span(3 of 6);
+			iframe, embed, object {
+				width: 100%;
+				height: auto;
+			}
+			img {
+				width: 100%;
+				}
+			}
+		.data{
+			@include span(3 of 6 last);
+			padding-left: 1em;
+		}
+		.social{
+			@include span(6 of 6);
+			.share{
+				padding-top: 0.5em;
+				padding-left: 1em;
+				float: left;
+			img{
+				width: 28px;
+				height: 28px;
+			}			
+			}
+			.timeandchannel{
+			@include span(3 of 6 last);	
+			padding-top:0.5em;	
+			padding-left: 1em;
+			}
+		}
+			
+		div{
+			font-size:1rem;
+			img{width:100%;}
+			h1{font-size:1rem;}
+			.triplenote:last-child{margin-right:0;}
+			h3 {
+				font-family: $font-secondary;
+				font-size: 1.3rem;
+				margin: 0em;
+				font-weight: normal;
+				a{
+					text-decoration:none;
+					color:$gray-10;
+					}
+				}
+			 p{
+			 	color:$gray-10;
+			 	font-size:1.5rem;
+			 	line-height:1.5em;
+			 	margin-top: 0.5em;
+			 }
+			.time {
+				font-size: 1.3rem;
+				font-family: $font-primary;
+				font-weight: 300;
+			}
+			.channel {
+				font-size: 1.3rem;
+				line-height: 1.5em;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $gray-10;
+			}
+		}
+	}
+}

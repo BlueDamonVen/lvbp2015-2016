@@ -1,0 +1,86 @@
+.player-title{
+	font-family: $font-primary;
+	background: $gray-11;
+	header{
+		.icon-player{
+			float: left;
+			padding: 0.5em 0 0.5em 1em;
+			i{
+				@include sprite-content-property(72px, 72px);
+			}
+		}
+		h1{
+			float: left;
+			padding: 0.7em 0.5em;
+			font-size: 3.5rem;
+			color: $white;
+		}
+	}
+	.tabs{
+		clear: both;
+		ul{
+			margin: 0;
+			padding: 0;
+			border: 0;
+			overflow: hidden;
+			background: #555555;
+			li{
+				margin-right: 0.1em;
+				background: #555555;
+				list-style-image: none;
+				list-style-type: none;
+				margin-left: 0;
+				white-space: nowrap;
+				float: left;
+				padding-left: 4px;
+				padding-right: 4px;
+				a{
+					display: block;
+					padding: 1em;
+					color: #fff;
+					text-decoration: none;
+					font-family: Roboto,sans-serif;
+					font-weight: bold;
+					font-size: 13px;
+					font-size: 1.3rem;
+				}
+			}
+			.active{
+				background: #D52C2E;
+			}
+			li:hover{
+				background: #D52C2E;
+				a{
+					color: #fff;
+				}
+			}
+			li:first-child{
+				padding-left: 0;
+			}
+			li.active a{
+				color: #fff;
+			}
+		}
+	}
+}
+@media (min-width: 320px) and (max-width: 640px) and (orientation: portrait), (min-width: 320px) and (max-width: 640px) and (orientation: landscape){
+.player-title .tabs ul li a{
+	font-size: 0.9rem;
+	font-size: 9px;
+	margin: 2px;
+	font-size: 0.8rem;
+	font-size: 8px;	
+}
+	.player-data{
+		width: 100px;
+		height: 100px;
+	}
+		.title-one h1 {
+	  	margin: 25px 0 0 0;
+	  	font-size: 1.5rem;
+	  	font-size: 15px;
+		}
+		.title-one {
+		  height: 70px;
+		}
+}

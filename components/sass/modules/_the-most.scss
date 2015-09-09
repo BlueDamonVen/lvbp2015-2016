@@ -1,0 +1,153 @@
+.desktop-pag-lo-mas{
+	@include border-box-sizing;
+	font-family: $font-primary;
+	font-size:62.5%;
+	.tabs{
+		  margin: 0;
+		  padding: 0;
+		  @include box-sizing(border-box);
+		  float: none;
+		  list-style: none;
+		  position: relative;
+		  text-align: left;
+		  li {
+		    float: left;
+		    display: block;
+		  }
+		  input[type="radio"] {
+		    position: absolute;
+		    top: -9999px;
+		    left: -9999px;
+		  }
+		  		  	.spacing{
+		    border-left: 4px solid #fff;
+			}
+		  label{
+		    display: block;
+		    padding:16px 359.7px 15px 9px;
+		    font-size: 1.25rem;
+		    font-weight: bold;
+		    cursor: pointer;
+		    position: relative;
+		    top: 0;
+		    font-family: $font-primary;
+		    color: #fff;
+		    background: $gray-7;
+		  	@include breakpoint($small){
+		  		padding-right: 100px;
+			}
+		  }
+
+			.tab-content{
+		    z-index: 2;
+		    display: none;
+		    overflow: hidden;
+		    padding-top: 1.4em;
+		    position: absolute;
+		    left: 0;
+		    border-top: 7px solid $internacional;
+		  }
+		  //The Magic
+		  [id^="tab"]:checked + label {
+		    top: 0;
+		    font-family: $font-primary;
+		    color: #fff;
+		    font-size: 1.25rem;
+		    font-weight: bold;
+		    padding:16px 359.7px 15px 11px;
+		    background: $internacional;
+		    @include breakpoint($small){
+		  		padding-right: 100px;
+			}
+		  }
+		  [id^="tab"]:checked ~ [id^="tab-content"] {
+		    display: block;
+		  }
+			.widget-pag-lo-mas{
+				@include border-box-sizing;
+				@include display-flex;
+				@include flex-wrap(wrap);
+				@include span(3 of 3);
+			.publicidad {
+				background:$gray-2;
+				text-align: left;
+				@include clearfix;
+				margin: 0 auto;
+				div{
+				color:$gray-6; 
+				line-height: 1rem;
+				font-size:1.2rem;
+				margin: 0.7em 0 0.5em 0.6em;
+				}
+			}
+				@include breakpoint($small){
+					@include transition();
+					@include span(1 of 1);	
+				}
+
+				.one{
+					@include span(1 of 3);
+					margin-bottom: gutter();
+					margin-top: gutter();
+					@include breakpoint($small){
+						@include transition();
+						@include span(1 of 1);
+					}
+				}
+				.two{
+					@include span(2 of 3);
+					margin-bottom: gutter();
+					@include breakpoint($small){
+						@include transition();
+						@include span(1 of 1);
+
+					}
+				}
+				.three{
+					@include span(3 of 3);
+
+					@include breakpoint($small){
+						@include transition();
+						@include span(1 of 1);
+					}
+				}
+				.last{
+					@include last;
+
+				}
+			}//widget lo mas
+	}//tabs
+	} //desktop-pag-lo-mas
+
+@include breakpoint($small){
+	.doblenote{
+		.media{
+			@include span(3 of 6);
+			iframe, embed, object {
+				width: 100%;
+				height: auto;
+			}
+			img {
+				width: 100%;
+				}
+			}
+		.data{
+			@include span(3 of 6 last);
+		}
+		.social{
+			@include span(6 of 6);
+			border-bottom: #333 solid 1px;
+			padding-bottom: 1em;
+			padding-top: 0.6em;
+			.icons-share{
+				padding-top: 0.5em;
+				float: left;
+				@include sprite-content-property(32px ,26px);			
+			}
+			.timeandchannel{
+			@include span(3 of 6 last);	
+			padding-top:0.5em;	
+			}
+		}
+	}
+}

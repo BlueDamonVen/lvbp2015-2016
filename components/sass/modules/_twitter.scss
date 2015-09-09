@@ -1,0 +1,32 @@
+.twitter{
+	background:$gray-2;
+	overflow: hidden;
+	font-family: $font-primary;
+	}
+
+.tittle{
+	padding:10px;
+	background:$deportes;
+	color:#fff;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	}
+
+.publicidad {
+    background:$gray-2;
+    text-align: left;
+    padding: 5%;
+    color: $gray-4;
+    @include clearfix;
+		div{
+			color:$gray-6; 
+			line-height: 1rem;
+			font-size:0.6rem;
+			margin: 1rem 0 0.1rem 1rem;
+		}
+	}
+
+.twcontent{
+	padding:1.0rem;
+}

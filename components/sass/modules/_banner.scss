@@ -1,0 +1,28 @@
+.one, .two, .three, .four{
+    .ad-leaderboard{
+        margin: 0 auto;
+        h4{
+            background-color: #EBEBEB;
+            color: $gray-4;
+            padding: 0.5em;
+        }
+        iframe {
+            width: 100%;
+        }
+    }
+}
+.one{
+    .ad-leaderboard{
+        max-width: 300px
+    }
+}
+.three{
+    .ad-leaderboard{
+        max-width: 728px
+    }
+}
+.four{
+    .ad-leaderboard{
+        max-width: 970px
+    }
+}

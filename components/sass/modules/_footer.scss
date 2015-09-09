@@ -1,0 +1,68 @@
+@include sticky-footer(auto, "layout", "footer", ".footer");
+.footer{
+	background: #EBEBEB;
+	border-top: #CBCBCB solid 1px;
+	padding-top: 1em;
+	.one{
+		margin-bottom: 4.4em;
+		ul{
+			margin-top: 1em;
+			li{
+				@include horizontal-list-item(1em);
+				a{
+					i{
+						@include sprite-content-property(46px, 46px);
+					}
+				}
+			}
+		}
+	}
+	.two{
+		.one{
+			border-right: dotted 0.1rem $gray-11;
+			margin: 0 1rem;
+			li{
+				margin-bottom: 1rem;
+				a{
+					font-size: 13px;
+					font-size: 1.3rem;
+					font-weight: 300;
+				}
+			}
+			&:last-child{
+				border-right: none;
+			}
+		}
+	}
+	.copyright{
+		background: #000;
+		p{
+			color: #fff;
+			padding: 1em 0;
+			font-size: 9px;
+			font-size: 0.9rem;
+		}
+	}
+	.one.last{
+		ul{
+			li{
+				@include horizontal-list-item(0.25rem);
+				
+				border-radius: 50%;
+				a{
+					display: block;
+					i{
+						@include sprite-content-property(32px, 32px);
+					}
+				}
+			}
+		}
+	}
+}
+@include breakpoint($small){
+	.footer{
+		.one, .two, .one.last{
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,122 @@
+.blogs{
+	background: $gray-2;
+	font-family: $font-secondary;
+	color: $gray-10;
+	header{
+		#title-blogs{
+			background: $red-lbvp;
+			color: $white;
+			font-size: 15px;
+			font-size: 1.5rem;
+			padding: 0.6em;
+			text-transform: uppercase;
+			font-family: $font-primary;
+			font-weight: bold;
+		}
+	}
+	.box-blogs{
+		padding: 1.5em;
+		.after{
+			padding-bottom: 1.5em;
+			border-bottom: 1px solid #384754;
+			.image-author{
+				width: 20%;
+				float: left;
+				img{
+					width: 40px;
+					height: 40px;
+					border-radius: 50px;
+					border: 2px solid grey;
+				}
+			}
+			.name-author{
+				width: 80%;
+				float: left;
+				font-size: 13px;
+				font-size: 1.3rem;
+				font-weight: 500;
+				margin-top: 0.3em;
+				font-family: $font-primary;
+			}
+			.blogs-title{
+				width: 80%;
+				float: left;
+				font-size: 16px;
+				font-size: 1.6rem;
+				margin-top: 0.2em;
+				span{
+					b{
+						a{
+							color: #333;
+							font-family: $font-primary;
+							font-weight: bold;
+						}
+					}
+				}
+			} 
+			.description{
+				clear: both;
+				font-size: 2rem;
+				color: $gray-10;
+				padding-top: 0.3em;
+				span{
+					a{
+						text-decoration: none;
+						color: $gray-10;
+						font-family: $font-primary;
+					}
+				}
+
+			}
+			.date-time{
+				margin-top: 0.3em;
+				font-size: 12px;
+				font-size: 1.2rem;
+				span:first-child{
+					color: $gray-4;
+					font-family: $font-primary;
+				}
+			}
+
+		}
+		.before{
+			padding: 1.5em 0em;
+			border-bottom: 1px solid rgb(56,71,84);
+			.image-author-min{
+				width: 15%;
+				float: left;
+				img{
+					width: 30px;
+					height: 30px;
+					border-radius: 50px;
+    				border: 2px solid grey;
+				}
+			}
+			.author-minimized{
+				font-size: 13px;
+				font-size: 1.3rem;
+				font-weight: 500;
+				font-family: $font-primary;
+				color: #000;
+			}
+			.title-minimized{
+				font-size: 1.4rem;
+				margin-top: 0.3em;
+				color: #000;
+				span{
+					b{
+						a{
+							color: #333;
+							font-family: $font-primary;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+		.before:last-child{
+			border-bottom: 0px;
+			padding-bottom: 0em;
+		}
+	}
+}

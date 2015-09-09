@@ -1,0 +1,95 @@
+.icons-share{
+	width: 32px; 
+	height: 32px;
+}
+	.share-wrapper, .share-action {
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+	}
+		.add-share {
+			display: block;
+			width: 32px;
+			height: 32px;
+			position: relative;
+			top: -4px;
+		}
+			.share-container {
+				-moz-transition:all 1s;
+				-o-transition:all 1s;
+				-moz-transition: all 0.3s;
+				-o-transition: all 0.3s;
+				-webkit-transition: all 0.3s;
+				transition: all 0.3s;
+				-moz-box-shadow: 0 2px 3px -2px #384750;
+				-webkit-box-shadow: 0 2px 3px -2px #384750;
+				box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+				width: 0px;
+				height: 0px;
+				background: #666;
+			}
+				.share-action:hover ~ .share-container,.share-container:hover {
+					width: 240px;
+					height: 40px;
+				}
+					.share-btn {
+						display:inline-block;
+						width: 25px;
+						height: 25px;
+						position: absolute;
+						z-indez:1;
+						border-color: #92888f;
+						border-style: solid;
+						border-width: 0;
+						font-size: 0px;
+						color: #ffffff;
+						overflow: hidden;
+					}
+						.share-action:hover ~ .share-container .share-btn ,.share-container:hover .share-btn  {
+							overflow: visible;
+							font-size: 25px;
+						}
+							.below.share-wrapper {
+								margin: 0% auto;
+								top: -16px;
+							}
+								.bottom.share-wrapper {
+									margin: 25% auto 0;
+								}
+							.left.share-wrapper {
+								margin: 50% 0 0 65%;
+								top: -16px;
+							}
+						.right.share-wrapper {
+							margin: 50% 0 0 25%;
+							top: -16px;
+						}
+					.below .share-container {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+					}
+				.bottom .share-container,.top .share-container {
+					position: relative;
+					top: -20px;
+					left: 20px;  
+					overflow: hidden;
+				}
+			.left .share-container,.right .share-container {
+				position: absolute;
+				top: 0%;
+				right: 50%;
+			}
+.top .share-action:hover ~ .share-container,.top .share-container:hover {
+	top: -65px;
+	padding:8px;
+}
+.simplenote{
+	.share {
+	margin-left: 10px;
+  	padding: 0;
+	}
+}
+.note-billboard .share {
+  margin-left: 10px;
+}

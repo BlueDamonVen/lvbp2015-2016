@@ -1,0 +1,224 @@
+@font-face
+{
+	font-family: "Roboto";
+	src: url('../../fonts/Roboto/Roboto-Regular.ttf?1438288984') format('truetype'),url('../../fonts/Roboto/Roboto-Light.ttf?1438288984') format('truetype'),url('../../fonts/Roboto/Roboto-Regular.ttf?1438288984') format('truetype'),url('../../fonts/Roboto/Roboto-Bold.ttf?1438288984') format('truetype'),url('../../fonts/Roboto/Roboto-Medium.ttf?1438288984') format('truetype');
+}
+.teams-62-leonesW 
+{
+	background-image: url('http://qa.eluniversal.com/images/eu5/beisbol/lvbp2015-2016/teams-62/leones-w.png');
+	background-repeat: no-repeat;
+}
+.teams-62-leonesB
+{
+	background-image: url('http://qa.eluniversal.com/images/eu5/beisbol/lvbp2015-2016/teams-62/leones-b.png');
+	background-repeat: no-repeat;
+}
+.player
+{
+	font-family: Roboto,sans-serif;
+	font-size: 62.5%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+.player:after
+{
+	clear: both;
+	content: " ";
+	display: block;
+}
+.player *,.player *:before,.player *:after
+{
+	box-sizing: border-box;
+	moz-box-sizing: border-box;
+	webkit-box-sizing: border-box;
+}
+.player header
+{
+	background: rgb(54, 54, 54);
+	height: 35px;
+	overflow: hidden;
+	zoom: 1;
+
+}
+.space1
+{
+	padding: 10px 0 10px 0;
+	border-spacing: 0;
+	color: #000;
+	border-collapse: separate;
+}
+.space1 tbody tr td b 
+{
+	padding-right: 10px;
+}
+.space2
+{
+	padding-left: 20px;
+}
+.box-data-player
+{
+	font-size: 10px;
+	font-size: 1rem;
+}
+#name-player
+{
+	padding-right: 3.5em;
+	text-align: left;
+	font-size: 20px;
+	font-size: 2.0rem;
+	font-weight: bold;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+.player header h1
+{
+	color: #fff;
+	font-weight: bold;
+	margin: 0.7em;
+	padding: 0;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+.player-data
+{
+	margin-right: 1.0em;
+	background-color: #dadada;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	top: 15px;
+    position: relative;
+}
+#title-one
+{
+	height: 93px;
+}
+#title-one h1
+{
+	margin: 35px 0 0 0;
+	font-size: 2.0rem;
+	font-size: 20px;
+}
+.player .widget-content-player .box-player table
+{
+	background: none;
+	color: #000;
+	width: 100%;
+}
+.player .widget-content-player .box-player table thead
+{
+	background: #c2c2c2;
+}
+.player .widget-content-player .box-player table thead tr th
+{
+	color: #333;
+}
+.player .widget-content-player .box-player table tbody tr td
+{
+	border-bottom: none solid 0;
+	font-size: 10px;
+	font-size: 1rem;
+	padding: 0.5em;
+}
+.player .widget-content-player .box-player table tbody tr:hover
+{
+	background: none;
+}
+.player .widget-content-player .box-player table
+{
+	float: left;
+	font-size: 1rem;
+	font-size: 10px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+.player .widget-content-player .box-player table thead tr th
+{
+	height: 40px;
+	padding: 5px;
+}
+.player .widget-content-player .box-player table thead tr th
+{
+	padding-left: 25px;
+	text-align: left;
+	font-weight: bold;
+}
+.player .widget-content-player .box-player table tbody tr td
+{
+	text-align: center;
+}
+.icon-player
+{
+	border-radius: 50%;
+	float: left;
+	height: 62px;
+	margin: 12px;
+	moz-border-radius: 50%;
+	padding: 0.2em;
+	webkit-border-radius: 50%;
+	width: 62px;
+}
+.icon-player i
+{
+	display: block;
+	height: 62px;
+	width: 62px;
+}
+.player .widget-content-player .box-player table tbody tr td span
+{
+	line-height: 1.8rem;
+	padding-left: 0.4em;
+}
+.player .widget-content-player .box-player table tbody tr td
+{
+	padding-left: 5px;
+	text-align: center;
+}
+.player .widget-content-player .box-player table tbody tr.odd
+{
+	background: #ebebeb;
+	height: 40px;
+}
+.player .widget-content-player .box-player table tbody tr.even
+{
+	background: #d7d7d7;
+	height: 40px;
+}
+.player .widget-content-player .box-player table tbody tr:hover
+{
+	background: #E53935;
+	color: #fff;
+}
+.onecolumna
+{
+	margin-top: 5px;
+    margin-bottom: 5px; 
+	float: right;
+    margin-right: -88px;
+}
+@media only screen  and (min-width : 1224px){
+	.mobile-player{
+		display: none;
+	}
+}
+@media (min-width: 320px) and (max-width: 640px) and (orientation: portrait), (min-width: 320px) and (max-width: 640px) and (orientation: landscape){
+	.desktop-player{
+		display: none;
+	}
+	.mobile-player{
+		display: block;
+	}
+	#title-one h1 {
+		font-size: 1.1rem;font-size: 17px;margin: 35px 0 0 0;
+	}
+	#name-player{
+		font-size: 19px;font-size: 1.2rem;
+	}
+	.player .widget-content-player .box-player table thead tr th {
+		padding-left: 2em;text-align: left;font-size: 11px;font-size: 1.1rem;font-weight: 100;
+	}
+}

@@ -1,0 +1,16 @@
+$shorthand: 4 1/4 fluid float after;
+.products{
+	div{
+		background:$white;
+		overflow: hidden;
+		a{
+			@include span (1 of 4);
+			i{
+				@include sprite-content-property(62px, 62px);
+			}
+			&:last-child {
+			@include span (1 of 4 last);
+			}
+		}
+	}
+}

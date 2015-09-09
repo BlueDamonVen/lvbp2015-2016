@@ -1,0 +1,67 @@
+.two-columns{
+	@include container();
+	@include border-box-sizing;
+	padding: 0 5em;
+	@include breakpoint($small){
+		padding: 0 1em;
+	}
+	.content{
+		@include border-box-sizing;
+		@include display-flex;
+		@include flex-wrap(wrap);
+		@include span(3 of 4);
+
+		@include breakpoint($small){
+			@include transition();
+			@include span(1 of 1);
+		}
+		.one{
+			@include span(1 of 3);
+			margin-bottom: gutter();
+			background-color: $gray-2;
+		
+			@include breakpoint($small){
+				@include transition();
+				@include span(1 of 1);
+			}
+		}
+		.two{
+			@include span(2 of 3);
+			margin-bottom: gutter();
+			@include breakpoint($small){
+				@include transition();
+				@include span(1 of 1);
+			}
+		}
+		.three{
+			@include span(3 of 3);
+			margin-bottom: gutter();
+			@include breakpoint($small){
+				@include transition();
+				@include span(1 of 1);
+			}
+		}
+		.last{
+			@include last;
+		}
+		@-moz-document url-prefix() { 
+		.one, .two, .three, .four, {
+			margin-bottom: 1.2em;
+			}
+		}
+	}
+	.sidebar{
+		@include span(1 of 4 last);
+		@include breakpoint($small){
+			@include transition();
+			@include span(1 of 1);
+		}
+		.one{
+			margin-bottom:1.2em;
+			@include span(1 of 1);
+			iframe{
+				width: 100% !important;
+			}
+		}
+	}
+}

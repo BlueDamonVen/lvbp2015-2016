@@ -1,0 +1,55 @@
+@import "susy";
+@import "config";
+
+header.header-movile, header.header{
+	.four{
+		margin-bottom: 1.2em;
+	}
+}
+.layout{
+	@include container();
+	@include border-box-sizing;
+	@include display-flex;
+	@include flex-wrap(wrap);
+	.one{	
+		@include span(1 of 4);
+		margin-bottom: gutter();
+
+		@include breakpoint($small){
+			@include transition();
+			@include span(1 of 1);
+		}
+	}
+	.two{
+		@include span(2 of 4);
+		margin-bottom: gutter();
+		@include breakpoint($small){
+			@include transition();
+			@include span(1 of 1);
+		}
+	}
+	.three{
+		@include span(3 of 4);
+		margin-bottom: gutter();
+		@include breakpoint($small){
+			@include transition();
+			@include span(1 of 1);
+		}
+	}
+	.four{
+		@include span(4 of 4);
+		margin-bottom: gutter();
+		@include breakpoint($small){
+			@include transition();
+			@include span(1 of 1);
+		}
+	}
+	@-moz-document url-prefix() { 
+	  .one, .two, .three, .four, {
+	     margin-bottom: 1.3em;
+	  }
+	}
+	.last{
+		@include last;
+	}
+}

@@ -1,0 +1,23 @@
+.breadcrumbs{
+	@include span(4 of 4);
+	ul{
+		@include inline-block-list();
+		li{
+			a{
+
+			}
+			i{
+				margin: 0 5px;
+				margin: 0 0.5rem;
+			}
+			&.active{
+				color: $red-lbvp;
+			}
+		}
+	}
+}
+@include breakpoint($small){
+	.breadcrumbs{
+		display: none;
+	}
+}

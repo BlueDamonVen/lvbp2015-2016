@@ -1,0 +1,131 @@
+/*
+	-------------------------------------------------------------
+	Mixin para definir los estilos de las tabs.
+	-------------------------------------------------------------
+	$bgTabs: Define el color de fondo de los tabs.
+	$bgTabsNormal: Define el color de fondo de los tabs.
+	$bgTabsHover: Define el color del Background de los tabs.
+	$bgTabsActive: Define el color del background del tab activo.
+	
+	$colorText: Define el color de texto de los tabs.
+	$colorTextHover: Define el color del texto al hacer hover.
+	$colorTextActive: Define el color del texto del tab activo.
+	--------------------------------------------------------------
+ */
+@mixin tabs-widget($bgTabs:$gray-2,$bgTabsNormal:$gray-1,$bgTabsHover:$mediumgray,$bgTabsActive:$gray-1,$colorText:$gray-1,$colorTextHover:$gray-2,$colorTextActive:$gray-1) {
+	ul{
+		background: $bgTabs;
+		li{
+			background: $bgTabsNormal;
+			@include horizontal-list-item;
+			a{
+				color:$colorText;
+				text-decoration: none;
+				font-family: $font-primary;
+			}
+		}
+		li:hover{
+			background:$bgTabsHover;
+			a{
+				color:$colorTextHover;
+			} 
+		}
+		li.active{
+			background:$bgTabsActive; 
+			a{
+				color:$colorTextActive;
+			}
+		}
+	}
+}
+/*
+	---------------------------------------------------------------------------
+	Mixin para definir los estilos de las tablas.
+	---------------------------------------------------------------------------
+	$bgTable: Define el color del background de la tabla.
+	$colorTextTable: Define el color del texto de la tabla.
+	$bgThead: Define el color del background de el cabecero(thead) de la tabla.
+	$colorTextThead: Define el color del texto del cabecero(thead) de la tabla.
+	$bgHoverRow: Define el color del background de las filas al hacer hover
+	$colorLineSpace: Define el color de la linea de separacion de las filas.
+	$lineThickness: Define el grosor de la linea de ´separacion de las filas.
+	----------------------------------------------------------------------------
+ */
+@mixin tables-widget($bgTable:$gray-2,$colorTextTable:$gray,$bgThead:$darkgray,$colorTextThead:$gray-2,$bgHoverRow:$mediumgray,$colorLineSpace:$gray-2,$lineThickness:2px) {
+	
+	table{
+		background: $bgTable;
+		color: $colorTextTable; 
+		width: 100%;
+		thead{
+			background: $bgThead;
+			tr{
+				th{
+					color: $colorTextThead;
+				}
+			}
+		}
+		tbody{
+			tr{
+				td{
+					font-size: 10px;
+					font-size: 1rem;
+					padding: 0.5em;
+					border-bottom:$colorLineSpace solid $lineThickness;
+				}
+				&:hover{
+					background:$bgHoverRow;
+				}
+			}
+		}
+	}
+} //tables-widget
+/*
+	---------------------------------------------------------------------------
+	Mixin para definir el tamaño de los sprites
+	---------------------------------------------------------------------------
+
+	----------------------------------------------------------------------------
+ */
+@mixin sprite-content-property($width:25px, $height:25px) {
+	display: block;
+	width: $width;
+	height: $height;
+}
+/*
+	---------------------------------------------------------------------------
+	Mixin para definir los links
+	---------------------------------------------------------------------------
+	
+	----------------------------------------------------------------------------
+ */
+@mixin linkunderline($size:0.8rem, $num:0.3em, $fw:normal) {
+	font-size: $size;
+	padding-bottom: $num;
+	font-weight: $fw;
+	
+	border-bottom:{
+		width: 1px;
+		style: dotted;
+	}
+}
+
+@mixin textlinks($size:0.9rem, $style:bold) {
+	font-size: $size;
+	font-weight: $style;
+}
+/*
+	---------------------------------------------------------------------------
+	Mixin items menu de secciones (inzquierdo)
+	---------------------------------------------------------------------------
+	
+	----------------------------------------------------------------------------
+ */
+@mixin itemMenuLeft($colorLine, $lineThickness, $colorText) {
+	li{
+		border-left: $colorLine solid $lineThickness;
+		a{
+			color: $colorText;
+		}
+	}
+}

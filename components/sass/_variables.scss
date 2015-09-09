@@ -1,0 +1,77 @@
+//-------------------------------//
+//----------Basic colors---------//
+//-------------------------------//
+$white					 :#FFFFFF;
+$black					 :#000000;
+//-------------------------------//
+//------Secondary colors---------//
+//-------------------------------//
+$gray-1                  : #E7E7E7;
+$gray-2                  : #EBEBEB;
+$gray-3                  : #CBCBCB;
+$gray-4                  : #A1A1A1;
+$gray-5                  : #7D7D7D;
+$gray-6                  : #959595;
+$gray-7                  : #5A5B5B;
+$gray-8                  : #EAE3CB;
+$gray-9                  : #A57706;
+$gray-10                 : #464647;
+$gray-11                 : #252525;
+$gray-12                 : #384750;
+$gray-13                 : #333333;
+$gray-14                 : #666666;
+$gray-15                 : #CCCCCC;
+$gray-16                 : #C2C2C2;
+$red-lbvp                : #D52C2E;
+//-------------------------------//
+//-----------Sections------------//
+//-------------------------------//
+$economia				 : #F9A825;
+$caracas				 : #29B6F6;
+$deportes				 : #E53935;
+$opinion				 : #66BB6A;
+$entretenimiento		 : #F06292;
+$internacional			 : #26C6DA;
+$sucesos				 : #8D6E63;
+$politica				 : #9575CD;
+$regiones				 : #1e88e5;
+$estilo-de-vida		     : #00897b;
+$gastronomia			 : #ef6c00;
+$tecnologia				 : #388E3C;
+$doble-via				 : #d81b60;
+$guiaturistica		     : #0277bd;
+$edicion-impresa		 : #ff8f00;
+$daily-news				 : #ffA000;
+$blogs			 		 : #ffb300;
+$servicios			 	 : #ff8c00;
+$obituarios				 : #607d8b;
+$carteles-y-edictos		 : #616161;
+//-------------------------------//
+//--------Social Media-----------//
+//-------------------------------//
+$facebook                : #33669a;
+$twitter                 : #06c3f3;
+$google-plus             : #c22026;
+$youtube                 : #b41f24;
+$instagram               : #5a7fa6;
+$linkdin                 : #2f7ab9;
+$rss                     : #c22026;
+//-------------------------------//
+//------------Fonts--------------//
+//-------------------------------//
+$font-primary            : Roboto, sans-serif;
+$font-secondary          : Roboto Slab, serif;
+$font-complement-1       : Roboto Mono;
+$font-complement-2       : Roboto Condensed, sans-serif;
+//Definicion de Border Radius 
+$default-border-radius   : 5px;
+//Definicion de Box Shadow
+$default-box-shadow 	 : (5, 5, 5, 5, $gray-1);
+//Definicion de Sprite
+$icons                 : sprite-map("icons/*.png");
+//---------------------------------------------//
+//----------------Media Queries----------------//
+//---------------------------------------------//
+$small                  : 320px (max-width 799px) (orientation portrait), 320px (max-width 799px) (orientation landscape);
+$tablet                 : 800px (max-width 1024px) (orientation portrait), 800px (max-width 1024px) (orientation landscape);
+$big                	: 1025px;

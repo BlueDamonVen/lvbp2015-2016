@@ -1,0 +1,409 @@
+@font-face{font-family:"Roboto";src:url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/font/roboto/Roboto-Regular.ttf') format('truetype'),url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/font/roboto/Roboto-Light.ttf') format('truetype'),url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/font/roboto/Roboto-Regular.ttf') format('truetype'),url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/font/roboto/Roboto-Bold.ttf') format('truetype'),url('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/font/roboto/Roboto-Bold.ttf') format('truetype')}
+.box-day-day2
+{
+	background: rgb(235, 235, 235);
+	border-radius: 8px;
+}
+td#point1 {
+    left: 26px;
+}
+td#point2 {
+    left: 46px;
+}
+.box-day-day
+{
+	float: right;
+	position: relative;
+	right: 45px;
+}
+.box-game .box-result-day .finalized
+{
+	background: rgb(161, 161, 161);
+}
+.box-game .box-result-day .next, .suspended
+{
+	background: rgb(37, 37, 37);
+}
+.box-result-day h4 table .list-game tr
+{
+	vertical-align: bottom;
+}
+.box-result-day h4
+{
+	border-radius: 0.3em;
+	color: #fff;
+	font-family: Verdana,serif;
+	font-size: 1em;
+    font-size: 10px;
+	font-weight: normal;
+	height: 12px;
+	margin: 0 0 10px 6px;
+	margin-top: 0.4em;
+	padding: 1px 0 0 0;
+	text-align: center;
+	width: 108px;
+}
+.box-result-day table tbody.list-game
+{
+	display: -webkit-box;
+}
+.bx-wrapper .bx-caption span
+{
+	color: #fff;
+	display: block;
+	font-family: Arial;
+	font-size: .85em;
+	padding: 10px;
+}
+.bx-wrapper .bx-caption
+{
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.bx-wrapper .bx-controls-auto .bx-start
+{
+	background: url(http://qa.eluniversal.com/images/eu5/beisbol/lvbp2015-2016/controls.png) -86px -11px no-repeat;
+	display: block;
+	height: 11px;
+	margin: 0 3px;
+	outline: 0;
+	text-indent: -9999px;
+	width: 10px;
+}
+.bx-wrapper .bx-controls-auto .bx-start:hover,.bx-wrapper .bx-controls-auto .bx-start.active
+{
+	background-position: -86px 0;
+}
+.bx-wrapper .bx-controls-auto .bx-stop
+{
+	background: url(http://qa.eluniversal.com/images/eu5/beisbol/lvbp2015-2016/controls.png) -86px -44px no-repeat;
+	display: block;
+	height: 11px;
+	margin: 0 3px;
+	outline: 0;
+	text-indent: -9999px;
+	width: 9px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,.bx-wrapper .bx-controls-auto .bx-stop.active
+{
+	background-position: -86px -33px;
+}
+.bx-wrapper .bx-controls-auto
+{
+	text-align: center;
+}
+.bx-wrapper .bx-controls-direction a
+{
+	height: 32px;
+	margin-top: -16px;
+	outline: 0;
+	position: absolute;
+	text-indent: -9999px;
+	top: 50%;
+	width: 32px;
+	z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled
+{
+	display: none;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
+{
+	right: 0;
+	width: 35px;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager
+{
+	text-align: left;
+	width: 80%;
+}
+.bx-wrapper .bx-loading
+{
+	background: url('http://qa.eluniversal.com/images/eu5/beisbol/lvbp2015-2016/bx_loader.gif') center center no-repeat #fff;
+	height: 100%;
+	left: 0;
+	min-height: 50px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2000;
+}
+.bx-wrapper .bx-next
+{
+	background: url('http://qa.eluniversal.com/images/eu5/beisbol/lvbp2015-2016/controls.png') no-repeat -43px 0px;
+	right: -35px;
+}
+.bx-wrapper .bx-next:hover
+{
+	background-position: -43px 0;
+}
+.bx-wrapper .bx-pager .bx-pager-item,.bx-wrapper .bx-controls-auto .bx-controls-auto-item
+{
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+}
+.bx-wrapper .bx-pager
+{
+	color: #666;
+	font-family: Arial;
+	font-size: .85em;
+	font-weight: bold;
+	padding-top: 20px;
+	text-align: center;
+}
+.bx-wrapper .bx-pager,.bx-wrapper .bx-controls-auto
+{
+	bottom: -30px;
+	position: absolute;
+	width: 100%;
+}
+.bx-wrapper .bx-pager.bx-default-pager a
+{
+	background: #666;
+	border-radius: 5px;
+	display: block;
+	height: 10px;
+	margin: 0 5px;
+	moz-border-radius: 5px;
+	outline: 0;
+	text-indent: -9999px;
+	webkit-border-radius: 5px;
+	width: 10px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,.bx-wrapper .bx-pager.bx-default-pager a.active
+{
+	background: #000;
+}
+.bx-wrapper .bx-prev
+{
+	background: url('http://qa.eluniversal.com/images/eu5/beisbol/lvbp2015-2016/controls.png') no-repeat 0 0px;
+	left: -35px;
+}
+.bx-wrapper .bx-prev:hover
+{
+	background-position: 0 0;
+}
+.bx-wrapper .bx-viewport
+{
+	background: rgb(37, 37, 37);
+	border: 0 solid rgb(37, 37, 37);
+	moz-transform: translatez(0);
+	ms-transform: translatez(0);
+	o-transform: translatez(0);
+	padding: 6px 0 6px 0;
+	transform: translatez(0);
+	webkit-transform: translatez(0);
+	width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -8px;
+    height: 96px !important;
+}
+.bxslider{
+	width: 1415%;
+    position: relative;
+    left: -40px;
+}
+.bx-wrapper img
+{
+	display: block;
+	max-width: 100%;
+}
+.bx-wrapper
+{
+	margin: 0 auto 60px;
+    max-width: 510px;
+    margin: 0px auto;
+	position: relative;
+	zoom: 1;
+}
+.icon-day-day i
+{
+	display: block;
+	height: 24px;
+	width: 24px;
+}
+.icon-day-day
+{
+	background-color: #dadada;
+	border-radius: 50%;
+	box-sizing: border-box;
+	float: left;
+	height: 30px;
+	margin: 0;
+	moz-border-radius: 50%;
+	padding: 0.2em;
+	webkit-border-radius: 50%;
+	width: 30px;
+}
+.inn span
+{
+	color: #000;
+	font-family: Verdana,serif;	
+	font-size: 0.9em;
+    font-size: 9px
+	font-weight: normal;
+	left: 5px;
+	position: relative;
+	text-align: center;
+}
+.inn
+{
+	border-radius: 0;
+	border-top: 1px solid #acacac;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding:  0 0 0 20px;
+	width: 55%;
+}
+.list-game tr td
+{
+	font-size: 1em;
+    font-size: 10px;
+	left: 18px;
+	padding-bottom: 0;
+	padding-left: 2px;
+	padding-right: 2px;
+	position: relative;
+	top: -5px;
+}
+.live
+{
+	background: #E53935;
+}
+.teams-24-aguilasB
+{
+	background-position: 0 0;
+}
+.teams-24-bravosB
+{
+	background-position: 0 -48px;
+}
+.teams-24-cardenalesB
+{
+	background-position: 0 -96px;
+}
+.teams-24-caribesB
+{
+	background-position: 0 -144px;
+}
+.teams-24-leonesB
+{
+	background-position: 0 -192px;
+}
+.teams-24-navegantesB
+{
+	background-position: 0 -240px;
+}
+.teams-24-sprite, .teams-24-aguilasB, .teams-24-aguilasW, .teams-24-bravosB, .teams-24-bravosW, .teams-24-cardenalesB, .teams-24-cardenalesW, .teams-24-caribesB, .teams-24-caribesW, .teams-24-leonesB, .teams-24-leonesW, .teams-24-navegantesB, .teams-24-navegantesW, .teams-24-tiburonesB, .teams-24-tiburonesW, .teams-24-tigresB, .teams-24-tigresW
+{
+	background-image: url('http://qa.eluniversal.com/images/eu5/beisbol/lvbp2015-2016/teams-24-sf537214eba.png');
+	background-repeat: no-repeat;
+}
+.teams-24-tiburonesB
+{
+	background-position: 0 -288px;
+}
+.teams-24-tigresB
+{
+	background-position: 0 -336px;
+}
+.widget-day-day
+{
+	background: rgb(37, 37, 37);
+	overflow: hidden;
+	padding: 0 0 0 0;
+	width: 100%;
+	zoom: 1;
+}
+.inn i.fa.fa-angle-up 
+{
+	color: #E53935;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+@media (min-width: 320px) and (max-width: 640px) and (orientation: portrait), (min-width: 320px) and (max-width: 640px) and (orientation: landscape)
+{
+/* 	.bx-viewport */
+/* 	{ */
+/* 		height: 80px !important; */
+/* 	} */
+	.box-day-day
+	{
+		height: 96px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+	}
+	.bx-wrapper .bx-next, .bx-prev
+	{
+		display: none;
+	}
+	.box-game
+	{
+		width: 120px !important;
+	}
+	.bx-wrapper
+	{
+/* 		padding: 0 0 0 25px; */
+	}
+	.box-game .box-result-day h4
+	{
+		padding: 2px 0 1px 0;
+	}
+	#publicity-1
+	{
+		background: rgb(37, 37, 37);
+		color: #A1A1A1;
+		display: block;
+		font-weight: bold;
+		height: 60px;
+		margin: 0 0 0 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		width: 100%;
+	}
+	.widget-day-day
+	{
+		height: 97px;
+	}
+	#publicity-1 span
+	{
+		font-family: Verdana,serif;
+		font-size: 5px;
+		left: 0;
+		position: relative;
+		top: 0;
+		vertical-align: middle;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+{
+	.widget-day-day
+	{
+		height: 96px;
+	}
+}
+ul li.box-game
+{
+	background: rgb(235, 235, 235);
+	border-radius: 5px;
+	font-family: Verdana,serif;
+	font-size: 0.6rem;
+	height: 85px;
+	margin-right: 10px;
+	width: 120px !important;
+	float: left;
+    list-style: none;
+    position: relative;
+    width: 120px;
+    margin-right: 10px;
+}
+

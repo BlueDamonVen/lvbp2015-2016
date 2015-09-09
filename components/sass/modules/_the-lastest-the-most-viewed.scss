@@ -1,0 +1,295 @@
+//@include sticky-footer(72px, ".widget-lo-mas", "#layout_footer", "#footer");
+
+.mobile-lo-mas{
+	display:none;
+}
+
+.desktop-lo-mas{
+	.widget-lo-mas{
+			@include display-flex;
+			@include flex-wrap(wrap);
+		.lo-mas-visto{
+			width: 48.75%;
+			float: right;
+			background:$gray-2;
+			.icon-more{
+				i{
+					font-size: 3rem;
+					color: $gray-4;
+				}
+			}
+		}
+		.lo-ultimo{
+			width: 48.75%;
+			margin-right: 2.5%;
+			float: left;
+			background:$gray-2;
+			.icon-more{
+				i{
+					font-size: 3rem;
+					color: $gray-4;
+				}
+			}
+		}
+		.title-tab{
+			h3{
+				background: $red-lbvp;
+				color: white;
+				margin:0;
+				font-family: $font-primary;
+				font-size: 1.5rem;
+				padding:0.5em;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+		.single{
+			@include container;
+			font-family: $font-primary;
+			padding: 0.6em 1em;
+			.media{
+				@include span(3 of 6);
+				iframe, embed, object {
+					width: 100%;
+					height: auto;
+				}
+				img {
+					width: 100%;
+					}
+				}
+			.data{
+				@include span(3 of 6 last);
+			}
+			.social{
+				@include span(6 of 6);
+				border-bottom: $gray-3 solid 1px;
+				padding-bottom: 1em;
+				.share{
+					padding-top: 0.5em;
+					float: left;
+				img{
+					width: 28px;
+					height: 28px;
+				}			
+				}
+				.timeandchannel{
+				@include span(3 of 6 last);	
+				padding-top:0.5em;	
+				padding-left: 1em;
+				}
+			}
+				
+			div{
+				font-size:0.8rem;
+				img{width:100%;}
+				h1{font-size:1rem;}
+				.single:last-child{margin-right:0;}
+				h3 {
+					padding-left: 0.5em;
+					margin: 0em;
+					font-weight: normal;
+					font-family: $font-secondary;
+	    			font-size: 1.3rem;
+					a{
+						text-decoration:none;
+						color:$gray-10;
+						}
+					}
+				 p{
+				 	color:$gray-10;
+				 	font-size:1.5rem;
+				 	line-height:1.5em;
+				 	margin-top: 0.5em;
+				 }
+				.time {
+					font-size: 1.3rem;
+					font-family: $font-primary;
+					font-weight: 300;
+				}
+				.channel {
+					font-family: $font-primary;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $gray-10;
+					font-size: 1.3rem;
+				}
+			}
+		}
+	} //widget lo mas
+}
+
+.mobile-lo-mas{
+	.widget-lo-mas{
+		ul{
+			list-style: none;
+			li{
+				float: left;
+				padding: 1em 2em;
+				background: $gray-14;
+				margin-right: 0.3em;
+				border-radius: 5px 5px 0px 0px;
+				a{
+					font-size: 13px;
+					font-size: 1.3rem;
+					color: $white;
+					outline: none;
+				}
+			}
+			li.ui-tabs-active{
+				background: $red-lbvp;
+			}
+		}
+		.lo-mas-visto{
+			width: 100%;
+			float: right;
+			background:$gray-2;
+			.icon-more{
+				padding: 2em;
+				i{
+					font-size: 3rem;
+					color: $gray-4;
+				}
+			}
+		}
+		.lo-ultimo{
+			width: 100%;
+			float: left;
+			background:$gray-2;
+			.icon-more{
+				padding: 2em;
+				i{
+					font-size: 3rem;
+					color: $gray-4;
+				}
+			}
+		}
+		.title-tab{
+			padding: 0.2em;
+			background: $red-lbvp;
+		}
+		.single{
+			@include container;
+			font-family: $font-primary;
+			padding: 0.6em 1em;
+			.media{
+				@include span(3 of 6);
+				iframe, embed, object {
+					width: 100%;
+					height: auto;
+				}
+				img {
+					width: 100%;
+					}
+				}
+			.data{
+				@include span(3 of 6 last);
+			}
+			.social{
+				@include span(6 of 6);
+				border-bottom: $gray-3 solid 1px;
+				padding-bottom: 1em;
+				.share{
+					padding-left: 1em;
+					padding-top: 0.5em;
+					float: left;
+				img{
+					width: 28px;
+					height: 28px;
+				}			
+				}
+				.timeandchannel{
+				@include span(3 of 6 last);	
+				padding-top:0.5em;	
+				padding-left: 1em;
+				}
+			}
+				
+			div{
+				font-size:0.8rem;
+				img{width:100%;}
+				h1{font-size:1rem;}
+				.single:last-child{margin-right:0;}
+				h3 {
+					padding-left: 0.5em;
+					margin: 0em;
+					font-weight: normal;
+					font-family: $font-primary;
+	    			font-size: 1.4rem;
+					a{
+						text-decoration:none;
+						color:$gray-10;
+						}
+					}
+				 p{
+				 	color:$gray-10;
+				 	font-size:1.5rem;
+				 	line-height:1.5em;
+				 	margin-top: 0.5em;
+				 }
+				.time {
+					font-size: 1.3rem;
+					font-family: $font-primary;
+					font-weight: 300;
+				}
+				.channel {
+					font-family: $font-primary;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $gray-10;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	} //widget lo mas
+}
+
+@include breakpoint($small){
+	.desktop-lo-mas{
+		display:none;
+	}
+	.mobile-lo-mas{
+		display:block;
+	}
+/*	.widget-lo-mas{
+		.single:first-child {
+			.media{
+					@include span(6 of 6);
+				}	
+			.data{
+					@include span(6 of 6);
+					padding-top: 1em;
+				}
+			.social{
+				.timeandchannel{
+					@include span(6 of 6);
+					padding-bottom: 0.5em;
+				}
+				.leyenda{
+					 p{
+					 	color:$gray-10;
+					 	font-size:1.05rem;
+					 	line-height:1.5em;
+					 	margin-top: 0.5em;
+					 }
+				}
+			}
+			div{
+				h3{
+					font-size: 1.5rem;
+				}
+			}
+		}
+		.lo-mas-visto{
+		@include span(6 of 6);
+		}
+		.lo-ultimo{
+		@include span(6 of 6);
+		}
+	}*/
+}
+.one .mobile-lo-mas{
+	display: block;	
+}
+.one .desktop-lo-mas{
+	display: none;	
+}

@@ -1,0 +1,20 @@
+$susy:(
+	flow: ltr,
+	output: float,
+	math: fluid,
+	column-width: false,
+	container: 1366px,
+	container-position: center,
+	last-flow: to,
+	columns: 4,
+	gutters: .05,
+	gutter-position: after,
+	global-box-sizing: border-box,
+);
+
+.layout{
+	padding: 0 5em;
+	@include breakpoint($small){
+		padding: 0 1em;
+	}
+}

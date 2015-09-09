@@ -1,0 +1,902 @@
+article.entry{
+	header{
+		.entry-type{
+			font-family:$font-primary;
+			font-size: 13px;
+	    	font-size: 1.3rem;
+	    	line-height: 17px;
+	    	line-height: 1.7rem;
+	    	text-transform:uppercase;
+	    	color:$gray-13;
+	    	margin: 0 0 10px 0;
+	    	i{
+	    		margin-right:5px;
+	    	}
+		}
+		.entry-pretitle{
+			font-family:$font-primary;
+			font-weight:300;
+			font-size: 25px;
+	    	font-size: 2.5rem;
+	    	line-height: 30px;
+	    	line-height: 3.0rem;
+	    	color:$gray-13;
+	    	margin: 0 0 10px 0;
+		}
+		.entry-title{
+			font-family:$font-secondary;
+			font-size: 54px;
+	    	font-size: 5.4rem;
+	    	line-height: 60px;
+	    	line-height: 6rem;
+	    	color:$gray-13;
+	    	margin: 0 0 10px 0;
+		}
+		.entry-summary{
+			font-family:$font-primary;
+			font-size: 22px;
+	    	font-size: 2.2rem;
+	    	line-height: 29px;
+	    	line-height: 2.9rem;
+	    	color:$gray-13;
+	    	margin: 0 0 10px 0;
+		}
+	}
+	.entry-share{
+		margin: 5px 0 0 0;
+		padding: 10px;
+		.share_social_article{
+			.share-wrapper-article{
+				position:relative,
+			}
+			.share-container-article {
+				overflow:hidden;
+				-moz-transition:all 1s;
+				-o-transition:all 1s;
+				-moz-transition: all 0.5s;-o-transition: all 0.5s;
+				-webkit-transition: all 0.5s;transition: all 0.5s;
+				-moz-box-shadow: 0 2px 3px -2px #384750;
+				-webkit-box-shadow: 0 2px 3px -2px #384750;
+				box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+				width: 0px;
+				height: 0px;
+				background: #666;
+				top: -42px;
+			    position: absolute;
+			    left: 15px;
+			}
+			.all-icons:hover ~ .share-container-article,.share-container-article:hover {
+				overflow: visible;
+				padding: 5px;
+				width: 135px;
+			    height: 40px;
+			}
+			.share_social{
+				float:left;
+				display: inline-block;
+				width:32px;
+				height:32px;
+			}
+			.all-icons{
+				width:32px;
+				height:32px;
+			}
+			.icons-stumbler{
+				@include sprite-content-property(32px,32px);
+			}
+			.addthis_32x32_style .at4-icon{
+				width:32px;
+				height:32px;
+				line-height: 32px;
+			}
+		}
+	}
+	.entry-media{
+		text-align:center;
+		figure{
+			position:relative;
+			img.feature-image{
+				height:auto;
+				width:100%;
+				max-height: 525px;
+			}
+			figcaption{
+				position:absolute;
+				bottom:0;
+				width: 100%;
+				height:80px;
+    			text-align: left;
+    			padding:15px;
+    			background:$gray-13;
+    			p{
+    				color:$white;
+    				font-family:$font-primary;
+					font-weight:500;
+					font-size: 16px;
+		    		font-size: 1.6rem;
+		    		line-height: 25px;
+		    		line-height: 2.5rem;
+		    		padding-bottom: 0;
+	    		}
+				.author{
+					padding: 0 5px 0 0;
+					font-family:$font-primary;
+					font-weight:700;
+				}
+				.source{
+					border-left:1px solid $white;
+					padding: 0 0 0 5px;
+					font-family:$font-primary;
+					font-weight:700;
+					text-trasnform:uppercase;
+				}
+				.share{
+					position:absolute;
+					right:15px;
+					bottom:15px;
+					@include sprite-content-property(32px,32px);
+				}
+			}
+			/*Inicio estilos player de sonidos*/
+			.audio-player{
+				position:relative;
+			}
+			/* Start: CONTROL BAR */
+			.mejs-container{
+				background:$black;
+			}
+			.mejs-container .mejs-controls { position: absolute; background: none;list-style-type: none;margin: 0;padding: 0;bottom: 0;left: 0;background: url(http://cdn.eluniversal.com/images/audio/background.png);background: rgba(0, 0, 0, 0.7);background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(50,50,50,0.7)), to(rgba(0,0,0,0.7)));background: -webkit-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7)); background: -moz-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));background: -o-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7)); background: -ms-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7)); 	background: linear-gradient(rgba(50,50,50,0.7), rgba(0,0,0,0.7)); 	height: 30px;width: 100%;}
+			.mejs-container .mejs-controls  div {list-style-type: none;background-image: none;display: block;float: left;margin: 0;padding: 0;width: 25px;height: 26px;font-size: 11px;line-height: 11px;background: 0;font-family: Helvetica, Arial;border: 0;}
+			.mejs-controls .mejs-button button {cursor: pointer;display: block;font-size: 0;line-height: 0;text-decoration: none;margin: 7px 5px;padding: 0;position: absolute;height: 16px;width: 16px;border: 0;background: transparent url(http://cdn.eluniversal.com/images/audio/controls.png) no-repeat;}
+			/* :focus for accessibility */
+			.mejs-controls .mejs-button button:focus {outline: solid 1px yellow;}
+			/* End: CONTROL BAR */
+			/* Start: Time (current / duration) */
+			.mejs-container .mejs-controls .mejs-time {color: #fff;display: block;height: 30px;width: auto;padding: 8px 3px 0 3px ;overflow: hidden;text-align: center;padding: auto 4px;}
+			.mejs-container .mejs-controls .mejs-time span {font-size: 11px;color: #fff;line-height: 12px;display: block;float: left;margin: 1px 2px 0 0;width: auto;}
+			/* End: Time (current / duration) */
+			/* Start: Play/pause */
+			.mejs-controls .mejs-play button {background-position:0 0;}
+			.mejs-controls .mejs-pause button {background-position:0 -16px;}
+			/* End: Play/pause */
+			/* Stop */
+			.mejs-controls .mejs-stop button {background-position: -112px 0;
+			}
+			/* End: Play/pause */
+			/* Start: Progress bar */
+			.mejs-controls div.mejs-time-rail {
+				width: 200px;
+				padding-top: 5px;
+			}
+			.mejs-controls .mejs-time-rail span {
+				display: block;
+				position: absolute;
+				width: 180px;
+				height: 9px;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+				cursor: pointer;
+			}
+			.mejs-controls .mejs-time-rail .mejs-time-total {
+				margin: 5px;
+				background: #333;
+				background: rgba(50,50,50,0.8);
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(30,30,30,0.8)), to(rgba(60,60,60,0.8)));
+				background: -webkit-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8)); 
+				background: -moz-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+				background: -o-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+				background: -ms-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+				background: linear-gradient(rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+			}
+			.mejs-controls .mejs-time-rail .mejs-time-loaded {
+				background: #CC9900;
+				background: linear-gradient(bottom, #CC9900 25%, #BD8940 62%, #B86B00 82%);
+				background: -o-linear-gradient(bottom, #CC9900 25%, #BD8940 62%, #B86B00 82%);
+				background: -moz-linear-gradient(bottom, #CC9900 25%, #BD8940 62%, #B86B00 82%);
+				background: -webkit-linear-gradient(bottom, #CC9900 25%, #BD8940 62%, #B86B00 82%);
+				background: -ms-linear-gradient(bottom, #CC9900 25%, #BD8940 62%, #B86B00 82%);
+				background: -webkit-gradient(
+									linear,
+									left bottom,
+									left top,
+									color-stop(0.25, #CC9900),
+									color-stop(0.62, #BD8940),
+									color-stop(0.82, #B86B00)
+									);
+				width: 0;
+			}
+			.mejs-controls .mejs-time-rail .mejs-time-current {
+				width: 0;
+				background: #fff;
+				background: rgba(255,255,255,0.8);
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.9)), to(rgba(200,200,200,0.8)));
+				background: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+				background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8)); 
+				background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+				background: -ms-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+				background: linear-gradient(rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+			}
+			.mejs-controls .mejs-time-rail .mejs-time-handle {
+				display: none;
+				position: absolute;
+				margin: 0;
+				width: 10px;
+				background: #fff;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				cursor: pointer;
+				border: solid 2px #333;
+				top: -2px;
+				text-align: center;
+			}
+
+			.mejs-controls .mejs-time-rail .mejs-time-float {
+				position: absolute;
+				display: none;
+				background: #eee;
+			/* 	width: 36px; */
+				width: 136px;
+				height: 17px;
+				border: solid 1px #333;
+				top: -26px;
+				margin-left: -18px;
+				text-align: center;
+				color: #111;
+			}
+
+			.mejs-controls .mejs-time-rail .mejs-time-float-current {
+				margin: 2px;
+				width: 30px;
+				display: block;
+				text-align: center;
+				left: 0;
+			}
+			.mejs-controls .mejs-time-rail .mejs-time-float-corner {
+				position: absolute;
+				display: block;
+				width: 0;
+				height: 0;
+				line-height: 0;
+				border: solid 5px #eee;
+				border-color: #eee transparent transparent transparent;
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+				top: 15px;
+				left: 13px;
+
+			}
+
+			/* End: Progress bar */
+
+			/* Start: Fullscreen */
+			.mejs-controls .mejs-fullscreen-button button {
+				background-position:-32px 0;
+			}
+			.mejs-controls .mejs-unfullscreen button {
+				background-position:-32px -16px;
+			}
+			/* End: Fullscreen */
+
+
+			/* Start: Mute/Volume */
+			.mejs-controls .mejs-volume-button {
+			}
+
+			.mejs-controls .mejs-mute button {
+				background-position:-16px -16px;
+			}
+
+			.mejs-controls .mejs-unmute button {
+				background-position:-16px 0;
+			}
+
+			.mejs-controls .mejs-volume-button {
+				position: relative;
+			}
+
+			.mejs-controls .mejs-volume-button .mejs-volume-slider {
+				display: none;
+				height: 115px;
+				width: 25px;
+				background: url(http://cdn.eluniversal.com/images/audio/background.png);
+				background: rgba(50, 50, 50, 0.7);
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+				top: -115px;
+				left: 0;
+				z-index: 1;
+				position: absolute;
+				margin: 0;
+			}
+			.mejs-controls .mejs-volume-button:hover {
+				-webkit-border-radius: 0 0 4px 4px;
+				-moz-border-radius: 0 0 4px 4px;
+				border-radius: 0 0 4px 4px;
+			}
+			/*
+			.mejs-controls .mejs-volume-button:hover .mejs-volume-slider {
+				display: block;
+			}
+			*/
+
+			.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total {
+				position: absolute;
+				left: 11px;
+				top: 8px;
+				width: 2px;
+				height: 100px;
+				background: #ddd;
+				background: rgba(255, 255, 255, 0.5);
+				margin: 0;
+			}
+
+			.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current {
+				position: absolute;
+				left: 11px;
+				top: 8px;
+				width: 2px;
+				height: 100px;
+				background: #ddd;
+				background: rgba(255, 255, 255, 0.9);
+				margin: 0;
+			}
+
+			.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
+				position: absolute;
+				left: 4px;
+				top: -3px;
+				width: 16px;
+				height: 6px;
+				background: #ddd;
+				background: rgba(255, 255, 255, 0.9);
+				cursor: N-resize;
+				-webkit-border-radius: 1px;
+				-moz-border-radius: 1px;
+				border-radius: 1px;
+				margin: 0;
+			}
+
+			/* horizontal version */
+
+			.mejs-controls div.mejs-horizontal-volume-slider {
+				height: 26px;
+				width: 60px;
+				position: relative;
+			}
+
+			.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+				position: absolute;
+				left: 0;
+				top: 11px;
+				width: 50px;
+				height: 8px;
+				margin: 0;
+				padding: 0;
+				font-size: 1px;
+				
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;	
+
+				background: #333;
+				background: rgba(50,50,50,0.8);
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(30,30,30,0.8)), to(rgba(60,60,60,0.8)));
+				background: -webkit-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8)); 
+				background: -moz-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+				background: -o-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+				background: -ms-linear-gradient(top, rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+				background: linear-gradient(rgba(30,30,30,0.8), rgba(60,60,60,0.8));
+
+			}
+
+			.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+				position: absolute;
+				left: 0;
+				top: 11px;
+				width: 50px;
+				height: 8px;
+				margin: 0;
+				padding: 0;
+				font-size: 1px;
+
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+
+				background: #fff;
+				background: rgba(255,255,255,0.8);
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0.9)), to(rgba(200,200,200,0.8)));
+				background: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+				background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8)); 
+				background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+				background: -ms-linear-gradient(top, rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+				background: linear-gradient(rgba(255,255,255,0.9), rgba(200,200,200,0.8));
+
+			}
+
+
+			.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle {
+				display: none;
+			}
+			/* End: Mute/Volume */
+
+			/* Start: TRACK (Captions and Chapters) */
+			.mejs-controls .mejs-captions-button {
+				position: relative;
+			}
+
+			.mejs-controls .mejs-captions-button button {
+				background-position:-48px 0;
+			}
+			.mejs-controls .mejs-captions-button .mejs-captions-selector {
+				visibility: hidden;
+				position: absolute;
+				bottom: 26px;
+				right: -10px;
+				width: 130px;
+				height: 100px;
+				background: url(http://cdn.eluniversal.com/images/audio/background.png);
+				background: rgba(50,50,50,0.7);
+				border: solid 1px transparent;
+				padding: 10px;
+				overflow: hidden;
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+			}
+			.mejs-controls .mejs-captions-button .mejs-captions-selector ul {
+				margin: 0;
+				padding: 0;
+				display: block;
+				list-style-type: none !important;
+				overflow: hidden;
+			}
+			.mejs-controls .mejs-captions-button .mejs-captions-selector ul li{
+				margin: 0 0 6px 0;
+				padding: 0;
+				list-style-type: none !important;
+				display:block;
+				color: #fff;
+				overflow: hidden;
+			}
+			.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input{
+				clear: both;
+				float: left;
+				margin: 3px 3px 0 5px;
+			}
+			.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label{
+				width: 100px;
+				float: left;
+				padding: 4px 0 0 0;
+				line-height: 15px;
+				font-family: helvetica, arial;
+				font-size: 10px;
+			}
+
+			.mejs-controls .mejs-captions-button .mejs-captions-translations {
+				font-size: 10px;
+				margin: 0 0 5px 0;
+			}
+
+
+			.mejs-chapters {
+				position: absolute;
+				top: 0;
+				left: 0;
+				-xborder-right: solid 1px #fff;
+				width: 10000px;
+			}
+			.mejs-chapters .mejs-chapter {
+				position: absolute;
+				float: left;
+				background: #222;
+				background: rgba(0, 0, 0, 0.7);
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(50,50,50,0.7)), to(rgba(0,0,0,0.7)));
+				background: -webkit-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+				background: -moz-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+				background: -o-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+				background: -ms-linear-gradient(top, rgba(50,50,50,0.7), rgba(0,0,0,0.7));
+				background: linear-gradient(rgba(50,50,50,0.7), rgba(0,0,0,0.7)); 
+				filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232,endColorstr=#000000);		
+				overflow: hidden;
+				border: 0;
+			}
+			.mejs-chapters .mejs-chapter .mejs-chapter-block {
+				font-size: 11px;
+				color: #fff;
+				padding: 5px;
+				display: block;
+				border-right: solid 1px #333;
+				border-bottom: solid 1px #333;
+				cursor: pointer;
+			}
+			.mejs-chapters .mejs-chapter .mejs-chapter-block-last {
+				border-right: none;
+			}
+			.mejs-chapters .mejs-chapter .mejs-chapter-block:hover {
+				background: #666;
+				background: rgba(102,102,102, 0.7);
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(102,102,102,0.7)), to(rgba(50,50,50,0.6)));
+				background: -webkit-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+				background: -moz-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+				background: -o-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+				background: -ms-linear-gradient(top, rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+				background: linear-gradient(rgba(102,102,102,0.7), rgba(50,50,50,0.6));
+				filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666,endColorstr=#323232);		
+			}
+			.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title{
+				font-size: 12px;
+				font-weight: bold;
+				display: block;
+				white-space:nowrap;
+				text-overflow: ellipsis;
+				margin: 0 0 3px 0;
+				line-height: 12px;
+			}
+			.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan{
+				font-size: 12px;
+				line-height: 12px;
+				margin: 3px 0 4px 0;
+				display: block;
+				white-space:nowrap;
+				text-overflow: ellipsis;
+			}
+			.mejs-captions-layer {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				text-align:center;
+				line-height: 22px;
+				font-size: 12px;
+				color: #fff;
+			}
+			.mejs-captions-layer  a {
+				color: #fff;
+				text-decoration: underline;
+			}
+			.mejs-captions-layer[lang=ar] {
+				font-size: 20px;
+				font-weight: normal;
+			}
+
+			.mejs-captions-position {
+				position: absolute;
+				width: 100%;
+				bottom: 15px;
+				left: 0;
+			}
+
+			.mejs-captions-position-hover {
+				bottom: 45px;
+			}
+
+			.mejs-captions-text {
+				padding: 3px 5px;
+				background: url(http://cdn.eluniversal.com/images/audio/background.png);
+				background: rgba(20, 20, 20, 0.8);
+
+			}
+			.mejs-clear {
+				clear: both;
+			}
+
+			/* Start: ERROR */
+			.me-cannotplay a {
+				color: #fff;
+				font-weight: bold;
+			}
+			.me-cannotplay span {
+				padding: 15px;
+				display: block;
+			}
+			/* End: ERROR */
+
+
+			/* Start: Loop */
+			.mejs-controls .mejs-loop-off button{
+				background-position: -64px -16px;
+			}
+			.mejs-controls .mejs-loop-on button {
+				background-position: -64px 0;
+			}
+			/* End: Loop */
+
+			/* Start: backlight */
+			.mejs-controls .mejs-backlight-off button{
+				background-position: -80px -16px;
+			}
+			.mejs-controls .mejs-backlight-on button {
+				background-position: -80px 0;
+			}
+			/* End: backlight */
+
+
+			/* Start: picture controls */
+			.mejs-controls .mejs-picturecontrols-button{
+				background-position: -96px 0;
+			}
+			/* End: picture controls */
+
+
+			/* context menu */
+			.mejs-contextmenu {
+				position: absolute;
+				width: 150px;
+				padding: 10px;
+				border-radius: 4px;
+				top: 0;
+				left: 0;
+				background: #fff;
+				border: solid 1px #999;
+				z-index: 1001; /* make sure it shows on fullscreen */
+			}
+			.mejs-contextmenu .mejs-contextmenu-separator {
+				height: 1px;
+				font-size: 0;
+				margin: 5px 6px;
+				background: #333;	
+			}
+
+			.mejs-contextmenu .mejs-contextmenu-item {
+				font-family: Helvetica, Arial;
+				font-size: 12px;
+				padding: 4px 6px;
+				cursor: pointer;
+				color: #333;	
+			}
+			.mejs-contextmenu .mejs-contextmenu-item:hover {
+				background: #2C7C91;
+				color: #fff;
+			}
+
+
+			/* Start: SourceChooser */
+			.mejs-controls .mejs-sourcechooser-button {
+				position: relative;
+			}
+
+			.mejs-controls .mejs-sourcechooser-button button {
+				background-position: -128px 0;
+			}
+			.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector {
+				visibility: hidden;
+				position: absolute;
+				bottom: 26px;
+				right: -10px;
+				width: 130px;
+				height: 100px;
+				background: url(http://cdn.eluniversal.com/images/audio/background.png);
+				background: rgba(50,50,50,0.7);
+				border: solid 1px transparent;
+				padding: 10px;
+				overflow: hidden;
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+			}
+
+			.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul {
+				margin: 0;
+				padding: 0;
+				display: block;
+				list-style-type: none !important;
+				overflow: hidden;
+			}
+			.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{
+				margin: 0 0 6px 0;
+				padding: 0;
+				list-style-type: none !important;
+				display:block;
+				color: #fff;
+				overflow: hidden;
+			}
+			.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{
+				clear: both;
+				float: left;
+				margin: 3px 3px 0 5px;
+			}
+			.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{
+				width: 100px;
+				float: left;
+				padding: 4px 0 0 0;
+				line-height: 15px;
+				font-family: helvetica, arial;
+				font-size: 10px;
+			}
+			/*End estilos player de sonidos*/
+		}
+	}
+	.entry-content{
+		margin: 25px 0 0 0;
+    	padding: 15px 0 0 0;
+    	.tools{
+    		position:absolute;
+    		top:-17px;
+    		right:10px;
+    		.resize{
+    			@include border-radius(50%);
+    			margin: 0 5px 0 0;
+    			&.icons-font-plus{
+    				@include sprite-content-property(32px,32px);
+    				display: inline-block;
+    				float:left,
+    			}
+    		}
+    		.print{
+    			font-size:16px;
+    			color: $white;
+    			background:$gray-7;
+    			@include border-radius(50%);
+    			width:32px;
+    			height:32px;
+    			line-height: 32px;
+    			text-align: center;
+    		}
+    	}
+    	.one{
+    		background: $white;
+    	}
+		.entry-info{
+			.author{
+				&.vcard{
+					padding-bottom: 15px;
+					.fn{
+						font-family:$font-primary;
+						font-size: 15px;
+			    		font-size: 1.5rem;
+			    		font-weight:700;
+			    		line-height: 21px;
+			    		line-height: 2.1rem;
+			    		color:$gray-14;
+			    		display:block;
+					}
+					.ns{
+						font-family:$font-primary;
+						font-weight:300;
+						font-size: 15px;
+			    		font-size: 1.5rem;
+			    		line-height: 21px;
+			    		line-height: 2.1rem;
+			    		color:$gray-14;
+			    		text-transform:uppercase;
+			    		display:block;
+					}
+				}
+			}
+			time{
+				font-family:$font-primary;
+				font-size: 14px;
+			    font-size: 1.4rem;
+			    line-height: 23px;
+			    line-height: 2.3rem;
+			    color:$gray-13;
+			    .clock{
+			    	margin-right: 5px;
+			    }
+			}
+		}
+		.entry-data{
+			position:relative;
+			padding: 30px 0 0 0;
+			border-top: 1px solid $gray-15;
+		}
+		.entry-data,.entry-data p,.entry-data a{
+			font-family:$font-primary;
+			font-size: 16px;
+			font-size: 1.6rem;
+			line-height: 22px;
+			line-height: 2.2rem;
+			color:$gray-13;
+		}
+		.entry-data p{
+			&.normal,&.normal-x{
+				font-size: 16px;
+				font-size: 1.6rem;
+				line-height: 22px;
+				line-height: 2.2rem;
+			}
+			&.large,&.large-x{
+				font-size: 18px;
+				font-size: 1.8rem;
+				line-height: 24px;
+				line-height: 2.4rem;
+			}
+			&.x-large{
+				font-size: 20px;
+				font-size: 2rem;
+				line-height: 26px;
+				line-height: 2.6rem;
+			}
+			&.small{
+				font-size: 14px;
+				font-size: 1.4rem;
+				line-height: 20px;
+				line-height: 2rem;
+			}
+			&.small-x{
+				font-size: 12px;
+				font-size: 1.2rem;
+				line-height: 18px;
+				line-height: 1.8rem;
+			}
+		}
+		.entry-data a{
+			text-decoration:none;
+		}
+		.related-articles-wrapper{
+			position:relative;
+			height:60px;
+			width:268px;
+			background: $gray-2  ;
+			border-left: 10px solid $gray-16;
+			padding:10px 140px 10px 15px;
+			margin:5px 15px 20px 0;
+			font-family:$font-primary;
+			font-size: 16px;
+		    font-size: 1.6rem;
+		    line-height: 21px;
+		    line-height: 2.1rem;
+		    color:$gray-13;
+		    font-weight:700;
+		    float:left;
+		    clear:left;
+			.arrow{
+				position: absolute;
+			    top: 15px;
+			    right: 15px;
+				@include sprite-content-property(32px,32px);
+			}
+		}
+	}
+	/***** Estilos solo para nota simple****/
+	&.articulo{
+		header{
+			.entry-type{
+				display:none;
+			}
+		}
+	}
+	&.video,&.sonido{
+		.entry-media{
+			border-bottom: 1px solid $gray-15;
+            margin: 0 0 20px 0;
+			figure{
+				figcaption{
+					position:relative;
+	    			background:$white;
+	    			p{
+	    				color:$gray-13;
+		    		}
+		    		.share{
+						bottom:20px;
+					}
+				}
+			}
+		}
+		.entry-content{
+			margin: 0;
+		}
+	}
+
+}
+@include breakpoint($small){
+	article.entry{
+		.entry-content{
+			.entry-info{
+				margin: 0 0 20px 0;
+			}
+			.entry-data{
+				padding-top: 20px;
+    			border-top: 1px solid $gray-15;
+			}
+			.related-articles-wrapper{
+				width:180px;
+				padding:10px 20px 10px 15px;
+			}
+		}
+	}
+}
